@@ -1,0 +1,21 @@
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  width: 100vw;
+  /* Adjust the width of your content items */
+  height: 100vh;
+  /* Adjust the height of your content items */
+  display: inline-block;
+  white-space: normal;
+  background-color: #f0f0f0;
+  /* Add styling as needed */
+  margin-right: 10px;
+  /* Add spacing between items */
+}

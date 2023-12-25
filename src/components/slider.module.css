@@ -1,0 +1,13 @@
+/* HorizontalScrollingWebsite.module.css */
+.body {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.section {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 2em;
+}
