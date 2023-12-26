@@ -1,0 +1,73 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.main .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 30px;
+}
+
+.main h1 {
+    font-family: "Be Vietnam Pro";
+    font-size: 32px;
+    color: #CCD6F6
+}
+
+.main p {
+    font: 'Be Vietnam Pro';
+    font-size: 20px;
+    color: #8892B0;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.icons {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 20px 0;
+
+
+
+}
+
+
+
+.wrapper {
+    width: 150vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icons img {
+    max-width: 85px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.inner {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner p {
+    font-size: 20px;
+}
+
+.inner h2 {
+    font-family: "Roboto Mono";
+    color: #8892B0;
+}

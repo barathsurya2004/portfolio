@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    width: 100%;
+    height: 50vh;
+}
+
+.container .picture {
+    aspect-ratio: 16/9;
+    max-width: 700px;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: relative;
+}
+
+.info .desc {
+    position: absolute;
+    width: 150%;
+    right: 0;
+    top: 40%;
+    transform-origin: center right;
+    height: 40%;
+    background-color: grey;
+}
+
+.info .tech {
+
+    margin-top: 70%;
+}
