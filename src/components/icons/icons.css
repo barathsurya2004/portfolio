@@ -1,0 +1,8 @@
+.feather {
+    cursor: pointer;
+
+    &:hover {
+        stroke: #64ffda;
+        transform: translateY(-2px);
+    }
+}

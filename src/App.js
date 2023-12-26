@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/navbar';
 import Progress from './components/progress';
+import Sidebar from './components/sidebar';
 import AboutPage from './pages/about';
 import Contact from './pages/contact';
 import Hero from './pages/hero';
@@ -12,6 +13,7 @@ function App() {
     <>
       <NavBar />
       <Progress />
+      <Sidebar />
       <main className="content">
         <Hero />
         <AboutPage />
