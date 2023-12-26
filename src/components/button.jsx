@@ -1,10 +1,10 @@
 
-
+import classes from './button.module.css';
 
 
 const Button = ({ children }) => {
     return (
-        <button>
+        <button className={classes.button}>
             {children}
         </button>
     )

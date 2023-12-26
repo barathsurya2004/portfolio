@@ -9,6 +9,7 @@ const Projects = () => {
                 <h1>Some Projects I've Built</h1>
                 <div className={classes.projects}>
                     <Project />
+                    <Project />
                 </div>
             </div>
 

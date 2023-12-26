@@ -1,0 +1,14 @@
+.container {
+    transform-origin: right;
+    position: fixed;
+    top: 90%;
+    right: 100px;
+    border: 1px solid #64ffda;
+    width: 200px;
+    height: 5px;
+    z-index: 200;
+}
+
+.container span {
+    text-align: right;
+}
