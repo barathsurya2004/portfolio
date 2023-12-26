@@ -24,7 +24,7 @@
 }
 
 .navigation {
-    color: #64ffda;
+
     display: flex;
     align-items: center;
 
@@ -39,4 +39,10 @@ li {
     float: left;
     text-decoration: none;
     margin: 0 25px;
+    cursor: pointer;
+    color: #CCD6F6;
+
+    &:hover {
+        color: #64ffda;
+    }
 }

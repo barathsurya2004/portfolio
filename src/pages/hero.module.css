@@ -45,3 +45,13 @@
 .main .resume {
     margin-top: 50px;
 }
+
+
+.arrow {
+    position: absolute;
+    font-size: 90px;
+    font-family: sans-serif;
+    bottom: 100px;
+    right: 20px;
+    color: #64ffda;
+}

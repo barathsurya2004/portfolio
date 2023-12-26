@@ -1,5 +1,5 @@
 .container {
-    transform-origin: right;
+    transform-origin: left;
     position: fixed;
     top: 90%;
     right: 100px;
