@@ -34,9 +34,11 @@ const Hero = () => {
                 <h2>building bridges between</h2><h2> ideas and the web</h2>
                 <p>Juggling electrical circuits by day,</p><p>and weaving web magic by night – aspiring to illuminate both worlds</p>
                 <div className={classes.resume}>
-                    <Button>
-                        Resume
-                    </Button>
+                    <a href="https://drive.google.com/file/d/1kEzdcwlLrxzDKvMIZBa9scrMV53k0MbZ/view?usp=sharing">
+                        <Button>
+                            Resume
+                        </Button>
+                    </a>
                 </div>
             </div>
 
