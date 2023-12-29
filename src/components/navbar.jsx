@@ -1,13 +1,12 @@
 
 import classes from './navbar.module.css';
-import Logo from '../assets/logo';
-import Button from './button';
+import Logo from '../assets/logo.png';
+
 
 const NavBar = () => {
-    console.log(Logo)
     return <div className={classes.container}>
         <div className={classes.logo}>
-            <Logo />
+            <img src={Logo} alt="logo" />
         </div>
         <nav className={classes.navigation}>
             <ul>

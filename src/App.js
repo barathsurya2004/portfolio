@@ -9,6 +9,7 @@ import Contact from './pages/contact';
 import Hero from './pages/hero';
 import Projects from './pages/projects';
 import { useState } from 'react';
+import Extra from './pages/extra';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Hero />
         <AboutPage />
         <Projects />
+        <Extra />
         <Contact />
       </main>
     </>

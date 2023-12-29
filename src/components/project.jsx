@@ -1,19 +1,27 @@
 import classes from './project.module.css';
 
 
-const Project = () => {
+const Project = ({ imageUrl, title, desc, tech }) => {
     return (
         <div className={classes.container}>
-            <div className={classes.picture}>
-                <div className={classes.hover} />
-                <img src="https://picsum.photos/700" alt="" />
+            <div style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "start"
+            }}>
+
+                <div className={classes.picture}>
+                    <div className={classes.hover} />
+                    <img src={imageUrl} alt="" />
+                </div>
             </div>
             <div className={classes.info}>
                 <h3>Featured Project</h3>
-                <h2>TITLE</h2>
-                <div className={classes.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, architecto ratione nisi possimus, maxime ea autem sunt ipsum esse voluptate aspernatur commodi laborum id, suscipit libero praesentium facilis. Ducimus, est.</div>
+                <h2>{title}</h2>
+                <div className={classes.desc}>{desc}.</div>
                 <div className={classes.tech}>
-                    <span>all the tech used to build the web page</span>
+                    {tech.map((ele) => <span>{ele} </span>)}
+
                 </div>
             </div>
         </div>

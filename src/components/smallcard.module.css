@@ -1,5 +1,4 @@
 .main {
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,7 +10,7 @@
 .main .container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 3fr;
     gap: 30px;
 }
 
@@ -27,20 +26,55 @@
     color: #8892B0;
 }
 
-.photo {
-    width: 300px;
-}
-
 .image {
     display: flex;
     justify-content: center;
-    align-items: center;
     border-radius: 10px;
 }
 
-.image img {
-    width: 200px;
+.photo {
+    width: 450px;
     object-fit: cover;
+}
+
+.imgContainer {
+    width: fit-content;
+    box-shadow: 7px 7px 0px -4px #64ffda;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        box-shadow: 20px 20px 0px -4px #64ffda;
+    }
+}
+
+.main hr {
+    height: 1px;
+    width: 80%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.main span {
+    color: #64ffda;
+    font-family: "Roboto Mono";
+}
+
+.main .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.inner a {
+    color: #64ffda;
+    font-family: "Roboto Mono";
+
 }
 
 .modal {
@@ -52,74 +86,4 @@
         background-color: #64ffda;
         opacity: 0.2;
     }
-}
-
-.imgContainer {
-    border-radius: 0px;
-    width: fit-content;
-    box-shadow: 7px 7px 0px -4px #64ffda;
-    cursor: pointer;
-    position: relative;
-
-    &:hover {
-        box-shadow: 20px 20px 0px -4px #64ffda;
-
-    }
-}
-
-.icons {
-    width: 100%;
-    height: 90px;
-    overflow-x: hidden;
-    margin: 20px 0;
-    position: relative;
-
-
-}
-
-.title {
-    display: flex;
-    align-items: center;
-    width: 80%;
-}
-
-.title hr {
-    height: 1px;
-    width: 80%;
-}
-
-.wrapper {
-    position: absolute;
-    width: 150vw;
-    display: flex;
-    justify-content: space-between;
-    z-index: 5;
-}
-
-.icons img {
-    max-width: 85px;
-    height: 90px;
-    margin: 0 5px;
-    z-index: 1;
-}
-
-.inner {
-    padding: 10px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.inner p {
-    font-size: 20px;
-}
-
-.inner span {
-    color: #64ffda;
-    font-family: "Roboto Mono";
-}
-
-.inner h2 {
-    font-family: "Roboto Mono";
-    color: #8892B0;
 }
