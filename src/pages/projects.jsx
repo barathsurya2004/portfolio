@@ -21,7 +21,7 @@ const project2 = {
 
 const Projects = () => {
     return (
-        <main className={classes.main}>
+        <main className={classes.main} id='projects'>
             <div className={classes.container}>
                 <div className={classes.title}>
                     <h1>Some Projects I've Built</h1>

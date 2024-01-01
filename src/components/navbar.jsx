@@ -10,13 +10,25 @@ const NavBar = () => {
         </div>
         <nav className={classes.navigation}>
             <ul>
-                <li>
+                <li onClick={() => {
+                    document.getElementById("about").scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }}>
                     About
                 </li>
-                <li>
+                <li onClick={() => {
+                    document.getElementById("projects").scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }}>
                     Projects
                 </li>
-                <li>
+                <li onClick={() => {
+                    document.getElementById("contact").scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }}>
                     Contact
                 </li>
             </ul>

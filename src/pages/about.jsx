@@ -23,7 +23,7 @@ const AboutPage = () => {
         console.log(ofset)
     }, [ref.current])
     return (
-        <main className={classes.main}>
+        <main className={classes.main} id='about'>
             <div className={classes.title}>
                 <h1 >About Me </h1>
                 <hr />

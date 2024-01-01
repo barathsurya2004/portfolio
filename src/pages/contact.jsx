@@ -4,7 +4,7 @@ import Button from '../components/button';
 
 const Contact = () => {
     return (
-        <main className={classes.main}>
+        <main className={classes.main} id='contact'>
             <div className={classes.container}>
                 <span>Contact</span>
                 <h1>Get in Touch</h1>
