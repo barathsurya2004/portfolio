@@ -1,19 +1,24 @@
 .container {
-    margin: 80px auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
+    position: relative;
     width: 100%;
-    height: 50vh;
+    height: 23vw;
     padding: 0 5vw;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin: 40px auto;
+
 }
 
 .container .picture {
     aspect-ratio: 16/9;
-    max-width: 35vw;
-    position: relative;
-
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 5vw;
 }
+
+
 
 .picture .hover {
     position: absolute;
@@ -32,11 +37,17 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: 1;
 }
 
 .info {
-    padding: 20px
+
+    padding: 20px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 60%;
 }
 
 .info h2 {
@@ -44,8 +55,8 @@
     font-size: 2.5vw;
     color: #ccd6f6;
     margin: 0;
-    margin-top: 5px;
-
+    text-align: right;
+    margin-top: 1%;
 }
 
 .info h3 {
@@ -53,47 +64,39 @@
     font-family: "Roboto Mono";
     color: #64ffda;
     font-size: 1.0vw;
+    text-align: right;
 }
 
-.container .info {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    position: relative;
-}
+
 
 .desc {
     color: #ccd6f6;
     font-size: 1.2vw;
+    padding: 25px;
+    margin: 10px 0;
     font-family: "Roboto Mono";
     text-align: right;
-}
-
-.info .desc {
-    padding: 25px;
-    position: absolute;
-    width: 130%;
-    right: 0;
-    bottom: 25%;
-    transform-origin: center right;
-    min-height: 40%;
+    width: 100%;
     background-color: #112240;
+    z-index: 1;
 
     &:hover {
         box-shadow: -2px 2px 15px #0a192f;
     }
 }
 
-.info .tech {
-    position: absolute;
-    bottom: 15%;
-    right: 0;
+.tech {
+
+    display: flex;
+    justify-content: flex-end;
 
 }
+
 
 .tech span {
     font-family: "Roboto Mono";
     font-size: 1vw;
-    color: #ccd6f6
+    color: #ccd6f6;
+    margin: 0 3%;
+
 }
