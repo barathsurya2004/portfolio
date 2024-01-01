@@ -1,15 +1,16 @@
 .container {
     margin: 80px auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 20px;
     width: 100%;
     height: 50vh;
+    padding: 0 5vw;
 }
 
 .container .picture {
     aspect-ratio: 16/9;
-    max-width: 650px;
+    max-width: 35vw;
     position: relative;
 
 }
@@ -32,16 +33,16 @@
     width: 100%;
     object-fit: cover;
     z-index: 0;
-
 }
 
 .info {
-    padding: 20px
+    padding: 20px;
+    z-index: 1;
 }
 
 .info h2 {
     font-family: "Be Vietnam Pro";
-    font-size: 28px;
+    font-size: 2.5vw;
     color: #ccd6f6;
     margin: 0;
     margin-top: 5px;
@@ -52,7 +53,7 @@
     margin: 0;
     font-family: "Roboto Mono";
     color: #64ffda;
-    font-size: 13px;
+    font-size: 1.0vw;
 }
 
 .container .info {
@@ -63,9 +64,9 @@
     position: relative;
 }
 
-.desc p {
+.desc {
     color: #ccd6f6;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-family: "Roboto Mono";
     text-align: left;
 }
@@ -73,13 +74,12 @@
 .info .desc {
     padding: 25px;
     position: absolute;
-    width: 130%;
+    width: 100%;
     left: 0;
-    top: 25%;
+    bottom: 25%;
     transform-origin: center right;
     min-height: 40%;
     background-color: #112240;
-    z-index: 2;
 
     &:hover {
         box-shadow: -2px 2px 15px #0a192f;
@@ -95,8 +95,6 @@
 
 .tech span {
     font-family: "Roboto Mono";
-    font-size: 13px;
+    font-size: 1vw;
     color: #ccd6f6
 }
-
-.picture {}

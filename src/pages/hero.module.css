@@ -14,7 +14,7 @@
 
 .main h3 {
     color: #64ffda;
-    font-size: 16px;
+    font-size: 1vw;
     margin: 0;
     margin-bottom: 30px;
     font-family: 'Roboto Mono';
@@ -22,21 +22,21 @@
 
 .main h1 {
     color: #a8b2d1;
-    font-size: 60px;
+    font-size: 4.5vw;
     margin: 0;
     font-family: "Be Vietnam Pro";
 }
 
 .main h2 {
     color: #8892b0;
-    font-size: 60px;
+    font-size: 4.4vw;
     margin: 0;
     font-family: "Be Vietnam Pro";
 }
 
 .main p {
     color: #8892b0;
-    font-size: 20px;
+    font-size: 1.4vw;
     margin: 0;
     margin-top: 20px;
     font-family: "Roboto Mono";
