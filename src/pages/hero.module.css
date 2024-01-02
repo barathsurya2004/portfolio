@@ -6,6 +6,12 @@
 
 }
 
+.additional {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .main .container {
     margin: 0 0;
     display: flex;

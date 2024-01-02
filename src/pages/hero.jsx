@@ -28,17 +28,19 @@ const Hero = () => {
             >
                 ↓
             </motion.div>}
-            <div className={classes.container}>
-                <h3>Hola! I'm </h3>
-                <h1>Barath Surya</h1>
-                <h2>building bridges between</h2><h2> ideas and the web</h2>
-                <p>Juggling electrical circuits by day,</p><p>and weaving web magic by night – aspiring to illuminate both worlds</p>
-                <div className={classes.resume}>
-                    <a href="https://drive.google.com/file/d/1kEzdcwlLrxzDKvMIZBa9scrMV53k0MbZ/view?usp=sharing">
-                        <Button>
-                            Resume
-                        </Button>
-                    </a>
+            <div className={classes.additional}>
+                <div className={classes.container}>
+                    <h3>Hola! I'm </h3>
+                    <h1>Barath Surya</h1>
+                    <h2>building bridges between</h2><h2> ideas and the web</h2>
+                    <p>Juggling electrical circuits by day,</p><p>and weaving web magic by night – aspiring to illuminate both worlds</p>
+                    <div className={classes.resume}>
+                        <a href="https://drive.google.com/file/d/1kEzdcwlLrxzDKvMIZBa9scrMV53k0MbZ/view?usp=sharing">
+                            <Button>
+                                Resume
+                            </Button>
+                        </a>
+                    </div>
                 </div>
             </div>
 

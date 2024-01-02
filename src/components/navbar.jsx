@@ -7,8 +7,8 @@ import HamburgerMenu from './hamburgerMenu';
 
 
 const NavBar = () => {
-    const [hamon, setHamon] = useState(false);
-    const { ham } = useContext(MediaContext);
+
+    const { ham, hamon, setHamon } = useContext(MediaContext);
 
     return <div className={classes.container}>
         <div className={classes.logo}>

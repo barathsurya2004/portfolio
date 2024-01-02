@@ -2,11 +2,14 @@ import { createContext, useEffect, useState } from "react";
 
 
 export const MediaContext = createContext({
-    ham: null
+    ham: null,
+    hamon: null,
+    setHamon: () => null
 })
 
 export const MediaContextProvider = ({ children }) => {
     const [ham, setHam] = useState(true);
+    const [hamon, setHamon] = useState(false);
     useEffect(() => {
         function handleResize(event) {
             // console.log(event.currentTarget.outerWidth)
@@ -27,5 +30,5 @@ export const MediaContextProvider = ({ children }) => {
         };
     }, []);
 
-    return <MediaContext.Provider value={{ ham }}>{children}</MediaContext.Provider>
+    return <MediaContext.Provider value={{ ham, hamon, setHamon }}>{children}</MediaContext.Provider>
 }
