@@ -8,17 +8,18 @@ import AboutPage from './pages/about';
 import Contact from './pages/contact';
 import Hero from './pages/hero';
 import Projects from './pages/projects';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Extra from './pages/extra';
+import { MediaContext } from './contexts/screenquery';
 
 function App() {
-
+  const { ham } = useContext(MediaContext);
   return (
     <>
       <NavBar />
 
       <Progress />
-      <Sidebar />
+      {!ham ? <Sidebar /> : null}
       <main className="content">
         <Hero />
         <AboutPage />

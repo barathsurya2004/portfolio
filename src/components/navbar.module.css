@@ -15,6 +15,11 @@
     z-index: 100;
 }
 
+.hamMenu {
+    z-index: 201;
+}
+
+
 .logo {
     height: 100%;
     display: flex;
@@ -48,5 +53,12 @@ li {
 
     &:hover {
         color: #64ffda;
+    }
+}
+
+
+@media (max-width:900px) {
+    .logo img {
+        height: 40px;
     }
 }
