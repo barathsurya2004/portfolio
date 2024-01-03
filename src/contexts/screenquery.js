@@ -8,7 +8,7 @@ export const MediaContext = createContext({
 })
 
 export const MediaContextProvider = ({ children }) => {
-    const [ham, setHam] = useState(true);
+    const [ham, setHam] = useState(false);
     const [hamon, setHamon] = useState(false);
     useEffect(() => {
         function handleResize(event) {
