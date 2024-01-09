@@ -1,23 +1,24 @@
 
 import classes from './navbar.module.css';
 import Logo from '../assets/logo.png';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { MediaContext } from '../contexts/screenquery';
 import HamburgerMenu from './hamburgerMenu';
+import NavHam from './icons/navHam';
+import HamIcon from './icons/ham';
+import Close from './icons/close';
 
 
 const NavBar = () => {
 
-    const { ham, hamon, setHamon } = useContext(MediaContext);
+    const { ham, hamon } = useContext(MediaContext);
 
     return <div className={classes.container}>
         <div className={classes.logo}>
             <img src={Logo} alt="logo" />
         </div>
         <nav className={classes.navigation}>
-            {ham ? <div className={classes.hamMenu} onClick={() => {
-                setHamon(!hamon)
-            }}>ham</div> : <ul>
+            {ham ? <NavHam /> : <ul>
                 <li onClick={() => {
                     document.getElementById("about").scrollIntoView({
                         behavior: "smooth"
