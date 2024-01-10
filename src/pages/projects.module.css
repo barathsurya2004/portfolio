@@ -48,3 +48,9 @@
         margin: 0 100px;
     }
 }
+
+@media (max-width:500px) {
+    .main .projects {
+        margin: 0 30px;
+    }
+}
