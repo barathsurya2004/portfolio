@@ -20,6 +20,9 @@ code {
     monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --green: #64ffda;
@@ -29,10 +32,16 @@ code {
   --heading3: 30px;
   --heading34: 28px;
   --heading4: 25px;
+  --heading5: 20px;
   --para1: 20px;
   --para12: 15px;
   --para2: 12px;
   --para3: 10px;
+  --para4: 7px;
   --subhead1: 25px;
   --subhead2: 20px;
+}
+
+span {
+  white-space: nowrap
 }

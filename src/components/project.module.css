@@ -4,6 +4,7 @@
     height: 23vw;
     padding: 0 5vw;
     display: flex;
+    align-items: center;
     justify-content: end;
     width: 100%;
     margin: 40px auto;
@@ -52,7 +53,7 @@
 
 .info h2 {
     font-family: "Be Vietnam Pro";
-    font-size: 2.5vw;
+    font-size: var(--heading34);
     color: #ccd6f6;
     margin: 0;
     text-align: right;
@@ -63,7 +64,7 @@
     margin: 0;
     font-family: "Roboto Mono";
     color: #64ffda;
-    font-size: 1.0vw;
+    font-size: var(--para12);
     text-align: right;
 }
 
@@ -71,12 +72,12 @@
 
 .desc {
     color: #ccd6f6;
-    font-size: 1.2vw;
+    font-size: var(--para2);
     padding: 25px;
     margin: 10px 0;
     font-family: "Roboto Mono";
     text-align: right;
-    width: 100%;
+    width: 130%;
     background-color: #112240;
     z-index: 1;
 
@@ -95,8 +96,53 @@
 
 .tech span {
     font-family: "Roboto Mono";
-    font-size: 1vw;
-    color: #ccd6f6;
-    margin: 0 3%;
+    font-size: var(--para3);
+    color: var(--green);
+    margin: 3% 3% 0 3%;
 
+}
+
+@media (max-width:1100px) {
+    .info h2 {
+        font-size: var(--heading4);
+    }
+
+    .info h3 {
+        font-size: var(--para3);
+    }
+}
+
+@media (max-width:900px) {}
+
+@media (max-width:700px) {
+    .container {
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .picture {
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.2;
+    }
+
+    .info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .info h2 {
+        font-size: var(--heading5);
+    }
+
+    .info h3 {
+        font-size: var(--para4);
+    }
+
+    .desc {
+        font-size: var(--para3);
+    }
 }

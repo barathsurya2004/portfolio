@@ -77,13 +77,14 @@
 
 .title {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
 }
 
 .title hr {
     height: 1px;
-    width: 80%;
+    width: 75%;
 }
 
 .wrapper {
@@ -127,7 +128,7 @@
 
 @media (max-width:1100px) {
     .main h1 {
-        font-size: var(--heading34);
+        font-size: var(--heading4);
     }
 
     .main p {
@@ -137,7 +138,7 @@
 
 @media (max-width:900px) {
     .main h1 {
-        font-size: var(--heading4);
+        font-size: var(--heading5);
     }
 
     .main h2 {
