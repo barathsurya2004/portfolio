@@ -10,8 +10,7 @@ const NavHam = () => {
         <div onClick={() => {
             setHamon(!hamon)
         }} >
-            {hamon ? <Close /> :
-                <HamIcon />}
+            {!hamon ? <HamIcon /> : <Close />}
         </div>
     )
 }

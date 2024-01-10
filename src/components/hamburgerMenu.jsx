@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import classes from './hamburgerMenu.module.css';
 import { MediaContext } from '../contexts/screenquery';
+import Close from './icons/close';
 
 const HamburgerMenu = () => {
     const { hamon, setHamon } = useContext(MediaContext);
@@ -9,7 +10,9 @@ const HamburgerMenu = () => {
             setHamon(false)
         }} />
         <div className={classes.container}>
-            hi
+            <div className={classes.inner}>
+                hi
+            </div>
         </div>
     </>
     )

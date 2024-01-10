@@ -23,4 +23,12 @@ code {
 
 :root {
   --green: #64ffda;
+  --heading1: 60px;
+  --heading2: 40px;
+  --heading12: 50px;
+  --heading3: 30px;
+  --para1: 20px;
+  --para12: 15px;
+  --para2: 12px;
+  --para3: 10px;
 }
