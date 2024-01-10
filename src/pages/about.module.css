@@ -16,13 +16,13 @@
 
 .main h1 {
     font-family: "Be Vietnam Pro";
-    font-size: 2vw;
+    font-size: var(--heading3);
     color: #CCD6F6
 }
 
 .main p {
     font: 'Be Vietnam Pro';
-    font-size: 1vw;
+    font-size: var(--para2);
     color: #8892B0;
 }
 
@@ -31,6 +31,7 @@
 }
 
 .image {
+    flex-grow: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@
 }
 
 .image img {
-    width: 200px;
+    max-width: 400px;
     object-fit: cover;
 }
 
@@ -103,6 +104,7 @@
 }
 
 .inner {
+    flex-grow: 2;
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
@@ -110,7 +112,7 @@
 }
 
 .inner p {
-    font-size: 1.3vw;
+    font-size: var(--para1);
 }
 
 .inner span {
@@ -121,4 +123,32 @@
 .inner h2 {
     font-family: "Roboto Mono";
     color: #8892B0;
+    font-size: var(--subhead1);
+}
+
+@media (max-width:1100px) {
+    .main h1 {
+        font-size: var(--heading34);
+    }
+
+    .main p {
+        font-size: var(--para12);
+    }
+}
+
+@media (max-width:900px) {
+    .main h1 {
+        font-size: var(--heading4);
+    }
+}
+
+
+@media (max-width:700px) {
+    .main p {
+        font-size: var(--para2);
+    }
+
+    .container .inner {
+        padding: 20px 20px;
+    }
 }
