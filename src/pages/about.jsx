@@ -31,15 +31,16 @@ const AboutPage = () => {
             <div className={classes.container}>
                 <div className={classes.inner}>
                     <p>Hi there! I'm Barath Surya, a second-year <span>electrical engineering student</span> at <span>IIT Hyderabad</span>. By day, I dive into the world of circuits and equations.</p><p> But as the sun sets, my creative side takes over, and I delve into <span>web development</span> . I enjoy building websites and digital experiences that make technology fun and accessible. Beyond tech, I'm also fascinated by <span>Japanese</span> language and culture, and I hold a certification in Japanese at the <span>N4 level</span>. </p>
-                    <h2>Few technologies I've been working on</h2>
+
                 </div>
-                <div className="image">
+                <div className={classes.image}>
                     <div className={classes.imgContainer}>
                         <div className={classes.modal} />
                         <img src={img} alt="photo" className={classes.photo} />
                     </div>
                 </div>
             </div>
+            <h2>Few technologies I've been working on</h2>
             <div className={classes.icons}>
                 <motion.div className={classes.wrapper} ref={ref}
                     initial={

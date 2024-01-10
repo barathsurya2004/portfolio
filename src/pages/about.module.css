@@ -30,12 +30,10 @@
     width: 20vw;
 }
 
-.image {
-    flex-grow: 3;
+.main .image {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
 
 .image img {
@@ -71,7 +69,7 @@
     width: 100%;
     height: 8vw;
     overflow-x: hidden;
-    margin: 20px 0;
+    margin: 10px 0;
     position: relative;
 
 
@@ -120,7 +118,8 @@
     font-family: "Roboto Mono";
 }
 
-.inner h2 {
+.main h2 {
+    margin: 20px 0;
     font-family: "Roboto Mono";
     color: #8892B0;
     font-size: var(--subhead1);
@@ -140,6 +139,10 @@
     .main h1 {
         font-size: var(--heading4);
     }
+
+    .main h2 {
+        font-size: var(--subhead2);
+    }
 }
 
 
@@ -150,5 +153,14 @@
 
     .container .inner {
         padding: 20px 20px;
+    }
+
+    .main .container {
+        grid-template-columns: auto;
+        grid-template-rows: auto 200px;
+    }
+
+    .main .image img {
+        width: 200px;
     }
 }
