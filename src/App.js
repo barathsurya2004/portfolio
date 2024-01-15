@@ -24,7 +24,7 @@ function App() {
         <Hero />
         <AboutPage />
         <Projects />
-        {/* <Extra /> */}
+        <Extra />
         <Contact />
       </main>
     </>
