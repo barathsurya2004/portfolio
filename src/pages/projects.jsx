@@ -2,6 +2,7 @@ import Project from '../components/project';
 import classes from './projects.module.css';
 import img from '../assets/projects/Project1.png';
 import img1 from '../assets/projects/Ecommerce.png';
+import img2 from '../assets/projects/project3.png';
 import Project2 from '../components/project2';
 const project1 = {
     title: 'Landing Page',
@@ -17,6 +18,12 @@ const project2 = {
     tech: ["Vs Code", "React"]
 
 }
+const project3 = {
+    title: "Real time Chat App",
+    imageUrl: img2,
+    desc: "Designed and implimented a real time chat application using websockets and dedicated frontend and backend",
+    tech: ["Socket.io", "ReactJS", "Node and Express", "PostgreSQL"]
+}
 
 
 const Projects = () => {
@@ -30,6 +37,7 @@ const Projects = () => {
                 <div className={classes.projects}>
                     <Project {...project1} />
                     <Project2 {...project2} />
+                    <Project {...project3} />
                 </div>
             </div>
 
