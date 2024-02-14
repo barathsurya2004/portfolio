@@ -29,6 +29,7 @@
 }
 
 .main .projects {
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -53,8 +54,5 @@
 }
 
 @media (max-width:500px) {
-    .main .projects {
-        width: 100vw;
-
-    }
+    .main .projects {}
 }
