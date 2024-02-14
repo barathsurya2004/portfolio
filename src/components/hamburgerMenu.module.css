@@ -22,3 +22,10 @@
     position: relative;
     margin: 15px 20px;
 }
+
+.navigation .hamMenu {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

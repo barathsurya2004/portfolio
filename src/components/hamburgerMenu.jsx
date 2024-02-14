@@ -11,7 +11,31 @@ const HamburgerMenu = () => {
         }} />
         <div className={classes.container}>
             <div className={classes.inner}>
-                hi
+                <nav className={classes.navigation}>
+                    <ul className={classes.hamMenu}>
+                        <li onClick={() => {
+                            document.getElementById("about").scrollIntoView({
+                                behavior: "smooth"
+                            });
+                        }}>
+                            About
+                        </li>
+                        <li onClick={() => {
+                            document.getElementById("projects").scrollIntoView({
+                                behavior: "smooth"
+                            });
+                        }}>
+                            Projects
+                        </li>
+                        <li onClick={() => {
+                            document.getElementById("contact").scrollIntoView({
+                                behavior: "smooth"
+                            });
+                        }}>
+                            Contact
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </>
